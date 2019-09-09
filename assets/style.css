@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+}
+
+ul{
+    background-color: black;
+    display: flex;
+    height: 60px;
+    width: 100%;
+    color: white;
+    
+}
