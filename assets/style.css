@@ -8,5 +8,13 @@ ul{
     height: 60px;
     width: 100%;
     color: white;
-    
+    text-decoration: none;
+}
+
+.bouton{
+    justify-content: center;
+    align-items: center;
+}
+.bouton:hover{
+    background-color: green;
 }
