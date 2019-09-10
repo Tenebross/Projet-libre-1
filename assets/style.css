@@ -1,3 +1,7 @@
+html{
+    height:100%;
+}
+
 body{
     margin: 0;
 }
@@ -10,7 +14,7 @@ ul{
     list-style-type: none;
     padding:0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-block-start: -1em;
+    margin-block-start: -1px;
 }
 
 .img{
@@ -37,9 +41,18 @@ ul{
 /* Design du footer */
 
 footer{
-    display: flex;
+    position: fixed;
     height: 100px;
     width: 100%;
-    align-items: flex-end;
     background-color: black;
+    color: white;
+    bottom: 0;
 }
+
+footer p{
+    text-align: end;
+    margin-top: 70px;
+    margin-right: 20px;
+}
+
+
