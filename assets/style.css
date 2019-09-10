@@ -10,6 +10,15 @@ ul{
     list-style-type: none;
     padding:0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-block-start: -1em;
+}
+
+.img{
+    height: 60px;
+}
+
+.img:hover{
+    background-color: green;
 }
 
 .bouton a{
