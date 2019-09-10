@@ -7,13 +7,12 @@ ul{
     display: flex;
     height: 60px;
     width: 100%;
-    color: white;
-    text-decoration: none;
 }
 
-.bouton{
-    justify-content: center;
-    align-items: center;
+.bouton a{
+    text-decoration: none;
+    width: 100px;
+    color: white;
 }
 .bouton:hover{
     background-color: green;
