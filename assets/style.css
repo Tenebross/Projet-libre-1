@@ -7,12 +7,15 @@ ul{
     display: flex;
     height: 60px;
     width: 100%;
+    list-style-type: none;
 }
 
 .bouton a{
     text-decoration: none;
     width: 100px;
     color: white;
+    padding: 15px 16px;
+    display: block;
 }
 .bouton:hover{
     background-color: green;
