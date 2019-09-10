@@ -10,19 +10,6 @@ body{
     
 }
 
-.body{
-    margin-bottom: -142px;
-}
-
-.body:after{
-    content: "";
-  display: block;
-}
-
- .footer, .body:after{
-     height: 142px;
- }
-
 /* Design de la navbar*/
 ul{
     background-color: black;
@@ -57,7 +44,7 @@ ul{
 
 /* Design du footer */
 
-footer{
+/*footer{
     height: 100px;
     width: 100%;
     background-color: black;
@@ -69,6 +56,46 @@ footer p{
     text-align: end;
     padding-top: 70px;
     padding-right: 20px;
-}
+}*/
 
+* {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+  .page-wrap {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -142px; 
+  }
+  .page-wrap:after {
+    content: "";
+    display: block;
+  }
+  .site-footer, .page-wrap:after {
+    height: 142px; 
+  }
+  .site-footer {
+    background: black;
+    color: white;
+  }
 
+  .site-footer p{
+    text-align: end;
+    padding: 80px;
+  }
+
+  .site-footer a{
+      text-decoration: none;
+      text-align: center;
+      height: 30px;
+      width: 80px;
+      padding: 20px;
+      color:white;
+      position: absolute;
+  }
+
+  .site-footer a:hover{
+      background-color: green;
+  }
