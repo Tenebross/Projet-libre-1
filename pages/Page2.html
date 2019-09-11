@@ -1,43 +1,58 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Projet-libre-1</title>
-        <link rel="stylesheet" type="text/css" href="../assets/style.css">
-        <meta charset="UTF-8">
-    </head>
 
+<head>
+    <title> Projet-libre-1</title>
+    <link rel="stylesheet" type="text/css" href="../assets/style.css">
+    <meta charset="UTF-8">
+</head>
+
+<body>
     <div class="page-wrap">
-            <body>
-                <header>
+            <header>
                     <nav>
-       
                         <ul>
                             <li>
-                                   <a href="../Index.html"><img class="img" src="../src/icon-maison.jpg" alt="Lion_King"
-                                    title="Lion"></a>
+                                <a href="../Index.html"><img class="img" src="../src/icon-maison.jpg" alt="Lion_King" title="Lion"></a>
                             </li>
                             <li class="bouton">
-                                <a href="./Page1.html">HTML</a> 
+                                <a href="./Page1.html">HTML</a>
                             </li>
-    
-                                <li class="bouton">
-                                    <a href="./Page2.html">CSS </a>
-                                </li>
-    
-                                <li class="bouton">
-                                    <a href="./Page3.html"> Tableau</a> 
-                                </li>
-                            </ul>
-                                </nav>
+                            <li class="bouton">
+                                <a href="./Page2.html">CSS </a>
+                            </li>
+                            <li class="dropdown">
+                                <button class="dropbtn"> Tableaux</button>
+                                <div class="dropdown-content-principale">
+                                    <div class="tablehtml">
+        
+                                            <a href="Page3.html?#debut-html">HTML
+                                                </a>
+                                                <div class="dropdown-content-tablehtml">
+                                                    <a href="Page3.html?#balises">Balises HTML</a>
+                                                </div>
+                                            </div>
+                                            <div class="tablecss">
+                                                <a href="Page3.html?#debut-css">CSS</a>
+                                                <div class="dropdown-content-tablecss">
+                                                    <a href="Page3.html?#attribut">Attribut</a>
+                                                    <a href="Page3.html?#pseudo-classe">Pseudo classe</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
                 </header>
-                </body>
-                                                
-                                          </div>
-                                          
-                                          <footer class="site-footer">   
-                                            <a href="./pages/Formulaire.html" onclick="">Nous contacter</a>      
-                                <P>
-                                    <b>@copyright Mathis & Bruno</b>
-                                </P>
-                        
-                                </footer>
+    </div>
+</body>
+
+
+<footer class="site-footer">
+        <div class="contact">
+            <a href="./pages/Formulaire.html" onclick="">Nous contacter</a>
+        </div>
+        <P>
+            <b>@copyright Mathis & Bruno</b>
+        </P>
+</footer>
