@@ -5,7 +5,7 @@
     border-bottom: solid red;
     width : 500px;
     background-color: aqua;
-    display:flex;
+    display: flex;
     flex-direction: column;
     cursor: 
 }
