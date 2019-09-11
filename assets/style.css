@@ -77,6 +77,10 @@ ul{
   display: block;
 }
 
+a.tablehtml:hover .dropdown-content-tablehtml{
+  display:block;
+}
+
 .dropbtn:hover{
   background-color: green;
 }
