@@ -11,7 +11,7 @@ body{
 }
 
 /* Design de la navbar*/
-ul{
+.navbar{
   background-color: black;
   display: flex;
   height: 60px;
@@ -19,8 +19,11 @@ ul{
   list-style-type: none;
   font-family: Verdana, Geneva, Tahoma, sans-semarginrif;
   margin-block-start: -1px;
+  padding-inline-start: 0;
 }
-
+ul{
+  padding:0;
+}
 .img{
   height: 60px;
 }
@@ -29,62 +32,34 @@ ul{
   background-color: green;
 }
 
-.dropdown{
-  display: block;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  align-self: flex-end;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border: none;
-  outline: none;
-  color: white;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-  display:block;
-  width: 140px;
-  text-align: center;
-  padding: 21px 20px;
-  position: relative;
-}
-
 .dropdown-content-principale {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  width: 110px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-
+  padding:0;
 }
 
-.dropdown-content-tablehtml{
+.dropdown-content-principale .bouton{
+  display:none;
+}
+
+.dropdown-content-tablehtml {
   display: none;
-  position: absolute;
   background-color: #f9f9f9;
-  width: 130px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  left: 110px;
-}
+  padding:0;
 
-.dropdown:hover .dropdown-content-principale {
-  display: block;
 }
-
-a.tablehtml:hover .dropdown-content-tablehtml{
-  display:block;
+.dropdown-content-tablecss {
+  display: none;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding:0;
 }
-
-.dropbtn:hover{
-  background-color: green;
-}
-
 .dropdown-content-principale a {
   float: none;
   color: black;
@@ -93,15 +68,28 @@ a.tablehtml:hover .dropdown-content-tablehtml{
   display: block;
   text-align: left;
 }
-
-a .tablehtml{
-  padding:0;
-}
-
 .dropdown-content-principale a:hover {
   background-color: #ddd;
 }
-.bouton a{
+/*.dropdown-content-principale a{
+  display:none;
+}*/
+
+.dropdown:hover .dropdown-content-principale {
+  display: block;
+}
+
+.dropdown-html:hover .dropdown-content-tablehtml{
+  display:block;
+}
+.dropdown-css:hover .dropdown-content-tablecss{
+  display:block;
+}
+.dropbtn:hover{
+  background-color: green;
+}
+
+.bouton{
   text-decoration: none;
   width: 100px;
   color: white;

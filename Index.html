@@ -1,54 +1,80 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Projet-libre-1</title>
-        <link rel="stylesheet" type="text/css" href="./assets/style.css">
-        <meta charset="UTF-8">
-    </head>
-    
-    <body>
-        <div class="page-wrap">
-            <header>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="./Index.html"><img class="img" src="./src/icon-maison.jpg" alt="Lion_King"title="Lion"></a>
-                        </li>
-                        <li class="bouton">
-                            <a href="./pages/Page1.html">HTML</a> 
-                        </li>
-                        <li class="bouton">
-                            <a href="./pages/Page2.html">CSS </a>
-                        </li>
-                        <li class="dropdown">
-                            <button class="dropbtn"> Tableaux</button> 
-                            <div class="dropdown-content-principale">
-                                <a class="tablehtml"href="./pages/TableauHTML.html">HTML
+
+<head>
+    <title> Projet-libre-1</title>
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div class="page-wrap">
+        <header>
+            <nav>
+                <ul class="navbar">
+                    <li>
+                        <a href="./Index.html"><img class="img" src="./src/icon-maison.jpg" alt="Lion_King" title="Lion"></a>
+                    </li>
+                    <li>
+                        <a class="bouton" href="./pages/Page1.html">HTML</a>
+                    </li>
+                    <li>
+                        <a class="bouton" href="./pages/Page2.html">CSS </a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="bouton" href="pages/Page3.html">
+                            Tableaux
+                        </a>
+                        <div class="dropdown-content-principale">
+                            <ul>
+                                <li class="dropdown-html">
+                                    <a href="pages/TableauHTML.html">
+                                        HTML
+                                    </a>
                                     <div class="dropdown-content-tablehtml">
-                                        <a>Balises HTML</a>
+                                        <ul>
+                                            <li>
+                                                <a>Balises HTML</a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                </a>
-                                <a class="tablecss" href="./pages/TableauCSS.html">CSS</a>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <article>
-                <h1>Quelques explications HTML & CSS</h1>
-                <a href="./Index.html"><img class="img" src="./src/iceland.jpg" alt="iceland"title="iceland"></a>
-                <p>
-                    Premier paragraphe
-                </p>
-            </article>
-            Content!
-        </div>
-    </body>
-    <footer class="site-footer">
-        <div class="contact">
-            <a href="./pages/Formulaire.html" onclick="">Nous contacter</a>
-        </div> 
-        <P>
-            <b>@copyright Mathis & Bruno</b>
-        </P>
-    </footer>
+                                </li>
+                                <li class="dropdown-css">
+                                    <a href="pages/TableauCSS.html">
+                                        CSS
+                                    </a>
+                                    <div class="dropdown-content-tablecss">
+                                        <ul>
+                                            <li>
+                                                <a>Attribut</a>
+                                            </li>
+                                            <li>
+                                                <a>Pseudo-classe</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <article>
+            <h1>Quelques explications HTML & CSS</h1>
+            <a href="./Index.html"><img class="img" src="./src/iceland.jpg" alt="iceland" title="iceland"></a>
+            <p>
+                Premier paragraphe
+            </p>
+        </article>
+        Content!
+    </div>
+</body>
+<footer class="site-footer">
+    <div class="contact">
+        <a href="./pages/Formulaire.html" onclick="">Nous contacter</a>
+    </div>
+    <P>
+        <b>@copyright Mathis & Bruno</b>
+    </P>
+</footer>
