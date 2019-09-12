@@ -3,31 +3,37 @@
     <head>
         <title> Projet-libre-1</title>
         <link rel="stylesheet" type="text/css" href="./assets/style.css">
+        <link rel="stylesheet" type="text/css" href="../assets/styleformulaire.css">
         <meta charset="UTF-8">
     </head>
 
                     <body>
 
                                 <form action="" method="post">
-                                        
+                                      <div id="form">
                                         <fieldset>
-                                            <input type="checkbox" value='Monsieur' name='Monsieur' autofocus> Monsieur <br>
-                                            <input type="checkbox" value='Madame' name='Madame'> Madame
+                                            <div id="check">
+                                               <input type="checkbox" value='Monsieur' name='Monsieur' autofocus> Monsieur <br>
+                                               <input type="checkbox" value='Madame' name='Madame'> Madame
+                                            </div>
                                             <br>
-                                            <label for="Nom">     Votre Nom</label>
-                                            <input type="text" id="non" name="Nom" label for="Nom" placeholder="votre Nom" required> 
-                                            <br>
-                                            <label for="prénom"> Votre Prénom</label>
-                                            <input type="text" id="prenom" name="Prénom" label for="Prénom" placeholder="votre Prénom" required> 
-                                            <br>
-                                            <label for="email">Email:</label>   
-                                            <input type="email" id="email" placeholder="Votre email" nam="email" required>
-                                            <br>        
-                                        </fieldset>
-                                         <fieldset>
-                                                <textarea name="Merci" id="Merci" cols="50" rows="10" placeholder="vos commentaires"></textarea>
-                                        </fieldset>
-                                            <input type="submit" value="Envoyer le formulaire">
-                                 </form>             
+                                                <div id="npe">
+                                                <label for="Nom">Votre Nom :</label>
+                                                    <input type="text" id="non" name="Nom" label for="Nom" placeholder="votre Nom" required> 
+                                                <br>
+                                                    <label for="prénom"> Votre Prénom :</label>
+                                                    <input type="text" id="prenom" name="Prénom" label for="Prénom" placeholder="votre Prénom" required> 
+                                                <br>
+                                                    <label for="email">Email:</label>   
+                                                    <input type="email" id="email" placeholder="Votre email" nam="email" required>
+                                                <br>   
+                                                </div>     
+                                            </fieldset>
+                                            <fieldset>
+                                                    <textarea name="Merci" id="Merci" cols="50" rows="10" placeholder="vos commentaires"></textarea>
+                                            </fieldset>
+                                                <input type="submit" value="Envoyer le formulaire" id="soumis">
+                                            </div>
+                                    </form>             
                                             <a href="../Index.html" onclick="">Retour au site</a>   
                      </body>

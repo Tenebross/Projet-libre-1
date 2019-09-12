@@ -55,7 +55,7 @@ ul{
   position: relative;
 }
 
-.dropdown-content-principale {
+.dropdown-content-principale, .dropdown-content-tablehtml, .dropdown-content-tablecss {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -66,37 +66,21 @@ ul{
 }
 
 .dropdown-content-tablehtml{
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
   width: 130px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
   left: 110px;
   top:0;
 }
 
 .dropdown-content-tablecss{
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
   top:38px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
   left: 110px;
 }
 
-.dropdown:hover .dropdown-content-principale {
+.dropdown:hover .dropdown-content-principale, .tablecss:hover .dropdown-content-tablecss, .tablehtml:hover .dropdown-content-tablehtml {
   display: block;
 }
 
-.tablehtml:hover .dropdown-content-tablehtml{
-  display:block;
-}
-.tablecss:hover .dropdown-content-tablecss{
-  display:block;
-}
-.dropbtn:hover{
+.dropbtn:hover, .bouton:hover{
   background-color: green;
 }
 
@@ -125,21 +109,27 @@ a .tablehtml{
   text-align: center;
 }
 
-.bouton:hover{
-  background-color: green;
-}
-
-/* Design du sidebar */
+/* Design du sidebar Page3 */
 
 .side{
   width:60px;
+  height: 60px;
   background-color: black;
   top:40%;
   right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0;
+}
+
+.side a{
+  font-size: large;
+  text-decoration: none;
+  color: white;
 }
 
 .sidebar{
-  width:180px;
   float:right;
   position: fixed;
   top:40%;
@@ -150,23 +140,45 @@ a .tablehtml{
   list-style-type: none;
 }
 
-/* Design du footer */
-
-/*footer{
-  height: 100px;
-  width: 100%;
-  background-color: black;
-  color: white;
-  align-self: flex-end;
+.sidedown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 110px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right:60px;
 }
 
-footer p{
-    text-align: end;
-    padding-top: 70px;
-    padding-right: 20px;
-}*/
+.sidedown, .sidedownn{
+  display:none;
+}
 
-* {
+.sidedown-content a{
+  float: none;
+  color: black;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.side:hover .sidedown-content, .shtml:hover .sidedown, .scss:hover .sidedownn{
+  display:block;
+}
+
+.shtml:hover, .scss:hover{
+  background-color: rgb(221, 221, 221);
+}
+
+.sidedown:hover, .sidedownn a:hover{
+  background-color: rgb(160, 158, 158);
+}
+
+/* Design du footer */
+
+
+  *{
     margin: 0;
   }
   html, body {
@@ -192,7 +204,7 @@ footer p{
   .site-footer p{
       text-align: end;
       padding-right: 20px;
-}
+  }
 
 .contact{
     height: 85%;
