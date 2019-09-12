@@ -1,11 +1,11 @@
-a[href="../Index.html"]{
+/*a[href="../Index.html"]{
     background-color: yellow;
     position: absolute;
     top: 500px; 
     left: 200px;
     font-family: 'Times New Roman', serif;
     font-size: 30px;
-}
+}*/
 caption{
     background-color: aquamarine;
     border-left:solid red;
@@ -22,21 +22,26 @@ tr{
     width : 500px;
     border:solid blue;
 }
-body{
+/*body{
     position :relative;
     top: 70px; 
     left: 80px;
-}
-#fix{
+}*/
+/*#fix{
     background-color: forestgreen;
     position: fixed;
     top: 80px;
     left: 700px;
 
-}
+}*/
 @media only screen
   and (min-width: 320px)
   and (max-width: 980px)
   { html{display: flex;
          align-items: flex-end; } 
+
+
+    caption{
+        width:350px;
     }
+}

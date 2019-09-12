@@ -1,39 +1,84 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Projet-libre-1</title>
-        <link rel="stylesheet" type="text/css" href="./assets/style.css">
-        <link rel="stylesheet" type="text/css" href="../assets/styleformulaire.css">
-        <meta charset="UTF-8">
-    </head>
 
-                    <body>
+<head>
+    <title> Projet-libre-1</title>
+    <link rel="stylesheet" type="text/css" href="../assets/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/styleformulaire.css">
+    <meta charset="UTF-8">
+</head>
 
-                                <form action="" method="post">
-                                      <div id="form">
-                                        <fieldset>
-                                            <div id="check">
-                                               <input type="checkbox" value='Monsieur' name='Monsieur' autofocus> Monsieur <br>
-                                               <input type="checkbox" value='Madame' name='Madame'> Madame
-                                            </div>
-                                            <br>
-                                                <div id="npe">
-                                                <label for="Nom">Votre Nom :</label>
-                                                    <input type="text" id="non" name="Nom" label for="Nom" placeholder="votre Nom" required> 
-                                                <br>
-                                                    <label for="prénom"> Votre Prénom :</label>
-                                                    <input type="text" id="prenom" name="Prénom" label for="Prénom" placeholder="votre Prénom" required> 
-                                                <br>
-                                                    <label for="email">Email:</label>   
-                                                    <input type="email" id="email" placeholder="Votre email" nam="email" required>
-                                                <br>   
-                                                </div>     
-                                            </fieldset>
-                                            <fieldset>
-                                                    <textarea name="Merci" id="Merci" cols="50" rows="10" placeholder="vos commentaires"></textarea>
-                                            </fieldset>
-                                                <input type="submit" value="Envoyer le formulaire" id="soumis">
-                                            </div>
-                                    </form>             
-                                            <a href="../Index.html" onclick="">Retour au site</a>   
-                     </body>
+<body>
+    <div class="page-wrap">
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../Index.html"><img class="img" src="../src/icon-maison.jpg" alt="Acceuil"
+                                title="Acceuil"></a>
+                    </li>
+                    <li class="bouton">
+                        <a href="../pages/Page1.html">HTML</a>
+                    </li>
+                    <li class="bouton">
+                        <a href="../pages/Page2.html">CSS </a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropbtn" href="../pages/Page3.html"> Tableaux</a>
+                        <div class="dropdown-content-principale">
+                            <div class="tablehtml">
+
+                                <a href="../pages/Page3.html?#debut-html">HTML
+                                </a>
+                                <div class="dropdown-content-tablehtml">
+                                    <a href="../pages/Page3.html?#balises">Balises HTML</a>
+                                </div>
+                            </div>
+                            <div class="tablecss">
+                                <a href="../pages/Page3.html?#debut-css">CSS</a>
+                                <div class="dropdown-content-tablecss">
+                                    <a href="../pages/Page3.html?#attribut">Attribut</a>
+                                    <a href="../pages/Page3.html?#pseudo-classe">Pseudo classe</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <form action="" method="post">
+            <div id="form">
+                <fieldset>
+                    <div id="check">
+                        <input type="checkbox" value='Monsieur' name='Monsieur' autofocus> Monsieur <br>
+                        <input type="checkbox" value='Madame' name='Madame'> Madame
+                    </div>
+                    <br>
+                    <div id="npe">
+                        <label for="Nom">Votre Nom :</label>
+                        <input type="text" id="non" name="Nom" label for="Nom" placeholder="votre Nom" required>
+                        <br>
+                        <label for="prénom"> Votre Prénom :</label>
+                        <input type="text" id="prenom" name="Prénom" label for="Prénom" placeholder="votre Prénom" required>
+                        <br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Votre email" nam="email" required>
+                        <br>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <textarea name="Merci" id="Merci" cols="50" rows="10" placeholder="vos commentaires"></textarea>
+                </fieldset>
+                <input type="submit" value="Envoyer le formulaire" id="soumis">
+            </div>
+        </form>
+    </div>
+</body>
+<footer class="site-footer">
+    <div class="contact">
+        <a href="../pages/Formulaire.html" onclick="">Nous contacter</a>
+    </div>
+    <P>
+        <b>@copyright Mathis & Bruno</b>
+    </P>
+</footer>

@@ -7,7 +7,7 @@
     background-color: aqua;
     display: flex;
     flex-direction: column;
-    cursor: 
+    margin-top: 2%;
 }
 #check{
     background-color: blueviolet;
@@ -19,14 +19,6 @@
     background-color: beige;
     display: flex;
     flex-direction: column;
-}
-a[href="../Index.html"]{
-    background-color: yellow;
-    position: absolute;
-    top: 500px; 
-    left: 200px;
-    font-family: 'Times New Roman', serif;
-    font-size: 30px;
 }
 #soumis {
     background-color: greenyellow;
