@@ -131,6 +131,13 @@ a .tablehtml{
 
 /* Design du sidebar */
 
+.side{
+  width:60px;
+  background-color: black;
+  top:40%;
+  right: 0;
+}
+
 .sidebar{
   width:180px;
   float:right;
