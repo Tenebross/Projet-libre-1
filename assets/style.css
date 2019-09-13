@@ -228,4 +228,49 @@ a .tablehtml{
   }
 
 
-  
+  /* ADMIN */
+/* manipulation pour acceder au panel ADMIN et listing
+.admin{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+   .code1, .code2, .code3{
+    width:60px;
+    height: 60px;
+    position: absolute;
+    margin:0;
+  }
+
+  .code1{
+    bottom:-142px;
+    right:200px;
+    padding-top:400px;
+  }
+
+  .code2{
+    display:none;
+    top:0px;
+    padding-left:150px;
+  }
+
+  .code3{
+    display:none;
+    display:flex;
+    right: 0px;
+  }
+
+  .code3 a{
+    padding:20px;
+    background-color: red;
+    text-decoration: none;
+  }
+
+  .code1:hover .code2{
+    display:block;
+  }
+
+  .code2:hover .code3{
+    display:flex;
+  }*/
